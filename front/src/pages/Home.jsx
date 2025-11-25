@@ -8,7 +8,7 @@ const Home = () => {
     
       useEffect(()=>{
         axios
-        .get("https://learn-project-live.onrender.com/api/v1/city")
+        .get("http://learn-project-live.onrender.com/api/v1/city")
         .then(response=>{
            console.log("SUCCESS:", response.data);
           setAllCity(response.data);
